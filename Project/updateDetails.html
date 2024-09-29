@@ -1,0 +1,13 @@
+<form action="updated.php" method="post">
+<input type="hidden" name="ud_id" value="<?php echo $id; ?>">
+First Name: <input type="text" name="ud_fname" value="<?php if (isset($fname)) echo $fname; ?>"><br>
+Last Name: <input type="text" name="ud_sname" value="<?php if (isset($sname)) echo $sname; ?>"><br>
+Email: <input type="text" name="ud_email" value="<?php if (isset($email)) echo $email; ?>"><br>
+Phone Number: <input type="text" name="ud_phone" value="<?php if (isset($phone)) echo $phone; ?>"><br>
+Wallet: <input type="text" name="ud_wallet" value="<?php if (isset($wallet)) echo $wallet; ?>"><br>
+
+<input type="Submit" value="Update">
+</form>
+</body>
+
+</html>
